@@ -57,7 +57,7 @@ public class PortWatch implements Observer {
     private Options createOptions() {
         Options options = new Options();
 
-        Option optConfig = new Option("c", "config", true, "config path - required for 'cli' mode");
+        Option optConfig = new Option("c", "config", true, "config path - required");
         optConfig.setRequired(true);
         options.addOption(optConfig);
 
