@@ -1,0 +1,49 @@
+{
+   "config":{
+      "integrations":[
+         {
+            "type":"slack",
+            "apiKey":"<bot user API key>",
+            "channel":"general"
+         }
+      ],
+      "scan":{
+         "type":"stealth",
+         "nmapPath":"C:\\Program Files (x86)\\Nmap",
+         "maxThreads":5,
+         "waitSeconds":300,
+         "hosts":[
+            {
+               "host":"192.168.1.1",
+               "ports":{
+                  "type":"range",
+                  "lower":1,
+                  "upper":65535
+               }
+            },
+            {
+               "host":"192.168.1.2",
+               "ports":{
+                  "type":"list",
+                  "list":[22, 25, 80, 3306]
+               }
+            },
+            {
+               "host":"192.168.1.3",
+               "ports":{
+                  "type":"range",
+                  "lower":1000,
+                  "upper":8000
+               }
+            },
+            {
+               "host":"192.168.1.4",
+               "ports":{
+                  "type":"list",
+                  "list":[80, 8080, 27018]
+               }
+            }
+         ]
+      }
+   }
+}
