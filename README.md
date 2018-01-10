@@ -1,6 +1,6 @@
 # PortWatch
 An infrastructure monitoring tool for actively detecting host and service changes.
-## Alerts
+### Alerts
 Alerts are generated when a host:
 * Is first scanned
 * Has a service change its state or fingerprint
