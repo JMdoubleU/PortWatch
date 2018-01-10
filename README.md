@@ -9,7 +9,7 @@ Alerts are generated when a host:
 
 ## Configuration
 A JSON configuration file is used to configure two main components: scanning and integrations.
-Use the [sample config file](docs/config.sample.json) as a reference.
+Use the [sample config file](doc/config.sample.json) as a reference.
 
 ### Scanning
 
